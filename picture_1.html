@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<!-- saved from url=(0077)https://120.110.112.106:22443/~astu9702/ASBS/index.php/booking/bookingView/24 -->
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <script src="./assets/jquery-3.2.1.min.js"></script>
+  <script src="./assets/semantic.js"></script>
+  <script src="./assets/sweetalert.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.css">
+  <link rel="stylesheet" href="./assets/sweetalert.css">
+</head>
+
+<body>
+  <div class="ui top attached demo menu">
+    <a class="item" id="sidebar">
+      <i class="sidebar icon"></i>
+      Menu
+    </a>
+    <div class="ui attached stackable menu" align="right">
+      <div class="ui container">
+        <a class="item">
+          <i class="home icon"></i> Home
+        </a>
+        <a class="item">
+          <i class="grid layout icon"></i> Browse
+        </a>
+        <a class="item">
+          <i class="mail icon"></i> Messages
+        </a>
+        <div class="ui simple dropdown item">
+          More
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <a class="item">
+              <i class="edit icon"></i> Edit Profile</a>
+            <a class="item">
+              <i class="globe icon"></i> Choose Language</a>
+            <a class="item">
+              <i class="settings icon"></i> Account Settings</a>
+          </div>
+        </div>
+        <div class="right item">
+          <div class="ui input">
+            <input type="text" placeholder="Search...">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui bottom attached segment pushable">
+    <div class="ui inverted labeled icon left inline vertical sidebar menu">
+      <a class="item" href="https://120.110.112.106:22443/~astu9702/ASBS/index.php/home/login">
+        <i class="address card icon"></i>
+        登入
+      </a>
+
+    </div>
+    <div class="pusher">
+      <div class="ui basic segment">
+        <title>刊登場地</title>
+
+        <h2 class="ui header">場地管理</h2>
+        <div class="ui container">
+          <h3 class="ui block header">
+            場地管理
+          </h3>
+          <div class="ui segment">
+            <p></p>
+            <div class="ui form">
+              <div class="ui items">
+                <div class="item">
+                  <div class="image">
+                    <img class="ui middle aligned tiny image" src="https://semantic-ui.com/images/wireframe/square-image.png">
+                    <!-- <span>Middle Aligned</span> -->
+                    <div class="ui divider"></div>
+                  </div>
+                  <div class="content">
+                    <form class="ui form">
+                      <div class="field">
+                        <input type="text" name="first-name" placeholder="場地名稱：">
+                      </div>
+                      <div class="field">
+                        <!-- <label>Short Text</label> -->
+                        <textarea rows="2" placeholder="簡述內容：" style="resize:none; width: 900px; margin-top: 0px; margin-bottom: 0px; height: 120px;"></textarea>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ui form">
+            <div class="field">
+              <label>
+                <i class="building icon"></i>地點</label>
+              <input type="text" name="username" placeholder="Adress">
+            </div>
+
+            <div class="three wide field">
+              <div class="field">
+                <label>時間</label>
+                <div class="field">
+                  <input type="text" name="unit" placeholder="Time">
+                </div>
+              </div>
+            </div>
+
+            <div class="three fields">
+              <div class="four wide field">
+                <div class="ui floating labeled icon dropdown button">
+                  <i class="filter icon"></i>
+                  <span class="text" style="padding:5px;">活動性質</span>
+                  <div class="menu">
+                    <div class="header">
+                      <i class="tags icon"></i>
+                      類型
+                    </div>
+                    <div class="divider"></div>
+                    <div class="item">
+                      <div class="ui red empty circular label"></div>
+                      聚會
+                    </div>
+                    <div class="item">
+                      <div class="ui blue empty circular label"></div>
+                      會議
+                    </div>
+                    <div class="item">
+                      <div class="ui yellow empty circular label"></div>
+                      課程講座
+                    </div>
+                    <div class="item">
+                      <div class="ui purple empty circular label"></div>
+                      展覽
+                    </div>
+                    <div class="item">
+                      <div class="ui teal empty circular label"></div>
+                      派對
+                    </div>
+                    <div class="item">
+                      <div class="ui green empty circular label"></div>
+                      表演
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="four wide field">
+                <div class="ui vertical accordion menu" id="accordion">
+                  <div class="item">
+                    <a class="title">
+                      <i class="dropdown icon"></i>
+                      Device
+                    </a>
+                    <div class="content">
+                      <div class="ui form">
+                        <div class="grouped fields">
+                          <div class="field">
+                            <div class="ui checkbox">
+                              <input type="checkbox" name="small">
+                              <label>
+                                <i class="video icon"></i>攝影機</label>
+                            </div>
+                          </div>
+                          <div class="field">
+                            <div class="ui checkbox">
+                              <input type="checkbox" name="medium">
+                              <label>
+                                <i class="hdd icon"></i>投影機</label>
+                            </div>
+                          </div>
+                          <div class="field">
+                            <div class="ui checkbox">
+                              <input type="checkbox" name="large">
+                              <label>
+                                <i class="desktop icon"></i>螢幕</label>
+                            </div>
+                          </div>
+                          <div class="field">
+                            <div class="ui checkbox">
+                              <input type="checkbox" name="x-large">
+                              <label>
+                                <i class="microphone icon"></i>麥克風</label>
+                            </div>
+                          </div>
+                          <div class="field">
+                            <div class="ui checkbox">
+                              <input type="checkbox" name="x-large">
+                              <label>
+                                <i class="server icon"></i>DVD設備</label>
+                            </div>
+                          </div>
+                          <div class="field">
+                            <div class="ui checkbox">
+                              <input type="checkbox" name="x-large">
+                              <label>
+                                <i class="mobile icon"></i>音響設備</label>
+                            </div>
+                          </div>
+                          <div class="field">
+                            <div class="ui checkbox">
+                              <input type="checkbox" name="x-large">
+                              <label>
+                                <i class="wifi icon"></i>無線網路</label>
+                            </div>
+                          </div>
+                          <div class="field">
+                            <div class="ui checkbox">
+                              <input type="checkbox" name="x-large">
+                              <label>
+                                <i class="coffee icon"></i>飲料提供</label>
+                            </div>
+                          </div>
+                          <div class="field">
+                            <div class="ui checkbox">
+                              <input type="checkbox" name="x-large">
+                              <label>
+                                <i class="heart icon"></i>點心</label>
+                            </div>
+                          </div>
+                          <div class="field">
+                            <div class="ui checkbox">
+                              <input type="checkbox" name="x-large">
+                              <label>
+                                <i class="edit icon"></i>黑&白板</label>
+                            </div>
+                          </div>
+                          <div class="field">
+                            <div class="ui checkbox">
+                              <input type="checkbox" name="x-large">
+                              <label>
+                                <i class="car icon"></i>停車場</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="six wide field">
+                <div class="ui labeled input,ui large icon input">
+                  <div class="ui label">
+                    其他設備
+                  </div>
+                  <input type="text" placeholder="Ex：桌子椅子">
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
+        </div>
+        <script src="./assets/menu.js"></script>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<script>
+  $('.ui.dropdown').dropdown();
+
+  $('.ui.checkbox').checkbox();
+
+  $('#accordion').accordion();
+</script>

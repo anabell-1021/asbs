@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!-- saved from url=(0077)https://120.110.112.106:22443/~astu9702/ASBS/index.php/booking/bookingView/24 -->
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <script src="./assets/jquery-3.2.1.min.js"></script>
+    <script src="./assets/semantic.js"></script>
+    <script src="./assets/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.css">
+    <link rel="stylesheet" href="./assets/sweetalert.css">
+</head>
+<body>
+  <div class="ui top attached demo menu">
+    <a class="item">
+    <i class="sidebar icon"></i>
+    Menu
+  </a>
+  <div class="ui attached stackable menu" align="right">
+        <div class="ui container">
+          <a class="item">
+            <i class="home icon"></i> Home
+          </a>
+          <a class="item">
+            <i class="grid layout icon"></i> Browse
+          </a>
+          <a class="item">
+            <i class="mail icon"></i> Messages
+          </a>
+          <div class="ui simple dropdown item">
+            More
+            <i class="dropdown icon"></i>
+            <div class="menu">
+              <a class="item"><i class="edit icon"></i> Edit Profile</a>
+              <a class="item"><i class="globe icon"></i> Choose Language</a>
+              <a class="item"><i class="settings icon"></i> Account Settings</a>
+            </div>
+          </div>
+          <div class="right item">
+            <div class="ui input"><input type="text" placeholder="Search..."></div>
+          </div>
+        </div>
+      </div>
+  </div>
+  
+<div class="ui bottom attached segment pushable">
+  <div class="ui inverted labeled icon left inline vertical sidebar menu" style="">
+              <a class="item" href="https://120.110.112.106:22443/~astu9702/ASBS/index.php/home/login">
+            <i class="address card icon"></i>
+            登入
+          </a>     
+  </div>
+  <div class="pusher">
+    <div class="ui basic segment">
+<title>成為場主</title>
+
+<h2 class="ui header">
+    <i class="building icon"></i>
+    <div class="content"> 
+        成為場主
+    </div>
+</h2>
+
+<div class="ui container">
+    <form class="ui form">
+        <h4 class="ui dividing header">場地資訊</h4>
+        <div class="three wide field">
+            <label>帳號</label>    
+            <input type="text" name="name" placeholder="UserName">
+        </div>
+        <div class="two fields">
+        <div class="three wide field">
+          <label>申請人姓名</label>    
+          <input type="text" name="first-name" placeholder="Name">
+        </div>
+        <div class="three wide field">
+            <label>身分</label>
+            <div class="ui selection dropdown">
+                <input type="hidden" name="gender">
+                <i class="dropdown icon"></i>
+                <div class="default text">Identity</div>
+                <div class="menu">
+                  <div class="item" value="1">學生</div>
+                  <div class="item" value="0">教職員</div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="field">
+            <label>連絡電話</label>
+            <div class="fields">
+              <div class="four wide field">
+                <input type="text" name="shipping[TEL]" placeholder="TEL">
+              </div>
+              <div class="two wide field">
+                <input type="text" name="shipping[TEL]" placeholder="# Extension">
+              </div>
+            </div>
+        </div>  
+        <div class="field">
+            <label>Email</label>
+              <div class="six wide field">
+                <input type="text" name="email" placeholder="xxx@pu.edu.tw">
+              </div>  
+        </div> 
+      <div class="field">
+          <label>開放時間</label>
+          <div class="fields">
+            <div class="three wide field">
+                <div class="ui selection dropdown">
+                    <input type="hidden" name="week">
+                    <i class="dropdown icon"></i>
+                    <div class="default text">星期</div>
+                    <div class="menu">
+                      <div class="item" value="1">Mon.</div>
+                      <div class="item" value="2">Tue.</div>
+                      <div class="item" value="3">Wed.</div>
+                      <div class="item" value="4">Thu.</div>
+                      <div class="item" value="5">Fri.</div>
+                      <div class="item" value="6">Sat.</div>
+                      <div class="item" value="7">Sun.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="three wide field">
+                <div class="ui selection dropdown">
+                    <input type="hidden" name="week">
+                    <i class="dropdown icon"></i>
+                    <div class="default text">時</div>
+                    <div class="menu">
+                      <div class="item" value="1">1</div>
+                      <div class="item" value="2">2</div>
+                      <div class="item" value="3">3</div>
+                      <div class="item" value="4">4</div>
+                      <div class="item" value="5">5</div>
+                      <div class="item" value="6">6</div>
+                      <div class="item" value="7">7</div>
+                      <div class="item" value="8">8</div>
+                      <div class="item" value="9">9</div>
+                      <div class="item" value="10">10</div>
+                      <div class="item" value="11">11</div>
+                      <div class="item" value="12">12</div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      <div class="field">
+            <label>連絡電話</label>
+            <div class="fields">
+              <div class="four wide field">
+                <input type="text" name="shipping[TEL]" placeholder="TEL">
+              </div>
+              <div class="two wide field">
+                <input type="text" name="shipping[TEL]" placeholder="# Extension">
+              </div>
+            </div>
+      </div>  
+     
+      
+      </form>
+</div>
+  <script src="./assets/menu.js"></script>
+</div></div></div>
+</body>
+</html>

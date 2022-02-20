@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="%E5%80%9F%E7%94%A8%E7%94%B3%E8%AB%8B%E5%88%97%E8%A1%A8_files/semantic.css">
+    <link rel="stylesheet" href="%E5%80%9F%E7%94%A8%E7%94%B3%E8%AB%8B%E5%88%97%E8%A1%A8_files/sweetalert.css">
+    <script src="%E5%80%9F%E7%94%A8%E7%94%B3%E8%AB%8B%E5%88%97%E8%A1%A8_files/jquery-3.js"></script>
+    <script src="%E5%80%9F%E7%94%A8%E7%94%B3%E8%AB%8B%E5%88%97%E8%A1%A8_files/semantic.js"></script>
+    <script src="%E5%80%9F%E7%94%A8%E7%94%B3%E8%AB%8B%E5%88%97%E8%A1%A8_files/sweetalert.js"></script>
+</head><body><div class="ui top attached demo menu">
+  <a class="item">
+    <i class="sidebar icon"></i>
+    Menu
+  </a>
+  <a class="item">
+    管理員大大, 您好
+  </a>
+</div>
+<div class="ui bottom attached segment pushable">
+  <div class="ui inverted labeled icon left inline vertical sidebar menu" style="">
+    <a class="item" href="https://120.110.112.106:22443/~astu9702/ASBS/index.php/admin/spaceManagement">
+      <i class="home icon"></i>
+      場地管理
+    </a>
+    <a class="item" href="https://120.110.112.106:22443/~astu9702/ASBS/index.php/admin/bookingManagement">
+      <i class="tasks icon"></i>
+      申請列表(施工中)
+    </a>
+    <a class="item" href="https://120.110.112.106:22443/~astu9702/ASBS/index.php/admin/longTermBookingManagement">
+      <i class="tasks icon"></i>
+      長期借用
+    </a>
+    <a class="item" href="https://120.110.112.106:22443/~astu9702/ASBS/index.php/admin/activityManagement">
+      <i class="block layout icon"></i>
+      活動管理(施工中)
+    </a>
+    <a class="item" href="https://120.110.112.106:22443/~astu9702/ASBS/index.php/admin/memberManagement">
+      <i class="smile icon"></i>
+      會員管理(測試階段)
+    </a>
+    <a class="item" href="https://120.110.112.106:22443/~astu9702/ASBS/index.php/member/logout">
+      <i class="window close icon"></i>
+      登出
+    </a>
+  </div>
+  <div class="pusher">
+    <div class="ui basic segment">
+<title>借用申請列表</title>
+
+<div class="ui container">
+  <h1>借用申請列表</h1>
+  <table class="ui celled table">
+    <thead>
+      <tr>
+        <th>活動名稱</th>
+        <th>借用申請人</th>
+        <th>借用場地</th>
+        <th>借用日期</th>
+        <th>借用時間</th>
+        <th>審核狀況</th>
+        <th>動作</th>
+        <th>刪除</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        </tr><tr><td>某單位例行會議</td><td>Leon</td><td>4F-2</td><td>2018-08-26</td><td>A1</td><td id="status1" class="warning">審核中</td><td><button class="positive ui button" onclick="check(1)">通過</button></td><td><button class="ui red button" onclick="del(1)">刪除</button></td></tr><tr><td>線上共學</td><td>Leon</td><td>11F-2</td><td>2018-08-23</td><td>P2</td><td id="status3" class="warning">審核中</td><td><button class="positive ui button" onclick="check(3)">通過</button></td><td><button class="ui red button" onclick="del(3)">刪除</button></td></tr><tr><td>測試</td><td>Leon</td><td>10F-3</td><td>2018-08-25</td><td>P1</td><td id="status4" class="warning">審核中</td><td><button class="positive ui button" onclick="check(4)">通過</button></td><td><button class="ui red button" onclick="del(4)">刪除</button></td></tr><tr><td>開會</td><td>Leon</td><td>共同工作空間</td><td>2018-11-23</td><td>A2</td><td id="status8" class="warning">審核中</td><td><button class="positive ui button" onclick="check(8)">通過</button></td><td><button class="ui red button" onclick="del(8)">刪除</button></td></tr><tr><td>資訊會議</td><td>Leon</td><td>共同工作空間</td><td>2018-08-22</td><td>P2</td><td id="status2" class="positive">審核通過</td><td><button class="ui orange button" onclick="check(2)">否決</button></td><td><button class="ui red button" onclick="del(2)">刪除</button></td></tr><tr><td>開會</td><td>Leon</td><td>4F-2</td><td>2018-08-31</td><td>P1</td><td id="status5" class="positive">審核通過</td><td><button class="ui orange button" onclick="check(5)">否決</button></td><td><button class="ui red button" onclick="del(5)">刪除</button></td></tr><tr><td>資訊會議</td><td>Leon</td><td>4F-3</td><td>2018-09-05</td><td>P1</td><td id="status6" class="positive">審核通過</td><td><button class="ui orange button" onclick="check(6)">否決</button></td><td><button class="ui red button" onclick="del(6)">刪除</button></td></tr><tr><td>專題會議</td><td>Leon</td><td>4F-1</td><td>2018-11-01</td><td>P1</td><td id="status7" class="positive">審核通過</td><td><button class="ui orange button" onclick="check(7)">否決</button></td><td><button class="ui red button" onclick="del(7)">刪除</button></td></tr><tr><td>專題會議</td><td>Leon</td><td>共同工作空間</td><td>2018-11-15</td><td>P2</td><td id="status9" class="positive">審核通過</td><td><button class="ui orange button" onclick="check(9)">否決</button></td><td><button class="ui red button" onclick="del(9)">刪除</button></td></tr><tr><td>專題會議</td><td>Leon</td><td>共同工作空間</td><td>2018-11-16</td><td>A1</td><td id="status10" class="positive">審核通過</td><td><button class="ui orange button" onclick="check(10)">否決</button></td><td><button class="ui red button" onclick="del(10)">刪除</button></td></tr>      
+    </tbody>
+  </table>
+
+</div>
+
+<script>
+  function check(id) {
+    swal(
+      {
+        title: "警告",
+        text: "輸入 check 後確定修改",
+        type: "input",
+        showCancelButton: true,
+        closeOnConfirm: false,
+        animation: "slide-from-top",
+        inputPlaceholder: "Write something"
+      },
+      function(inputValue){
+        if (inputValue === false) {
+          return false;
+        }
+
+        if (inputValue === "") {
+          swal.showInputError("You need to write something!");
+          return false
+        }
+        
+        if(inputValue === 'check') {
+          $.ajax({
+            type:"POST", 
+            data: {id : id},
+            url: "https://120.110.112.106:22443/~astu9702/ASBS/index.php/admin/check",
+            dateType:"json",
+            error:function(){
+              swal("提示", "booking_check ajax connect error", "warning");
+            },
+            success:function(val){
+              if(val == 'yes'){
+                swal("提示", "審核成功" + inputValue, "success");
+                window.location.reload();
+              }else if(val == 'no'){
+                swal("提示", "審核失敗" + inputValue, "error");
+              }else {
+                swal("提示", "booking_check ajax error", "warning")
+              }
+            }
+          });
+        }					
+      }
+    );
+  }
+</script><script src="%E5%80%9F%E7%94%A8%E7%94%B3%E8%AB%8B%E5%88%97%E8%A1%A8_files/menu.js"></script></div></div></div></body></html>
